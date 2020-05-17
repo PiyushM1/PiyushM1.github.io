@@ -44,24 +44,22 @@ html, body{
 }
 
 .sticky-top{
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
-.nav-item a{ 
+.nav-link{ 
     text-decoration: none;
-    padding-right: 1em;
-    line-height: 2em;
     color: grey;
     font-size: 18px;
-}
-.nav-link{
     font-weight: 200;
+}
+#nav-list{
+    list-style-type: none;
 }
 .navbar-nav .nav-item a:active, .nav-item a:hover{
     color: lightgrey;
 }
-
 .navbar-toggler:hover{
     background-color: #252530;
 }
@@ -78,11 +76,10 @@ a:hover{
     /* text-transform: uppercase; */
     color: white;
     display: table-cell;
-    font-size: 1em;
     text-align: justify;
     padding: 10%;
     padding-top: 15%;
-    margin-top: 10%;
+    margin-top: 15px;
     padding-bottom: 20%;
 }
 
@@ -91,10 +88,11 @@ a:hover{
 }
 .dp{
     border-radius: 50%;
-    max-width: 350px;
+    max-width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    align-content: center;
     padding-bottom: 2em;
     padding-top: 4em;
 }
@@ -204,7 +202,7 @@ a:hover{
     display: inline;
 }
 
-li::before{
+.course-list li::before{
     content: "\2022";
     color: white;
     font-weight: bold; 
@@ -246,7 +244,6 @@ li::before{
 .proj-list li:nth-child(even){
     color: darkgrey;
 }
-
 .network-icon{
     justify-content:center;
     content: center;
@@ -278,8 +275,135 @@ li::before{
 }
 @media (max-width: 767px) {
     .network-icon a{
-        font-size: 3em;
-        color: white;
         padding: 0.5em;
+    }
+}
+@media (max-width: 415px) {
+    .network-icon a{
+        font-size: 2.5em;
+        color: white;
+        padding: 0.4em;
+    }
+    #name{
+        color: white;
+        font-family: "Proza Libre", "Gentium Basic", Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        font-size: 24px;
+        text-shadow: 1px 1px 1px grey;
+    }
+    .navbar-toggler{
+        font-size: small;
+    }
+    #fixed{
+        background: url(bckg4.jpg) no-repeat center center fixed;
+        display: table;
+        height: 40%;
+        position: relative;
+        width: 100%;
+        background-size: cover;
+    }
+    .proj-list h3, .proj-list h4{
+        font-size: 90%;
+    }
+    #skills, #education{
+        font-size: 250%;
+    }
+    #profile, #about-me{
+        font-size: 200%;
+    }
+    #deg, #org{
+        font-size: 150%;
+    }
+    #descr{
+        font-size: 120%;
+    }
+    #profile-text, #profile-text a{
+        font-size: 125%;
+    }
+    .proj-list{
+        font-size: 20px;
+    }
+    .proj-list h3{
+        font-size: 24px;
+    }
+    .proj-list h5{
+        font-size: 22px;
+    }
+    .dp{
+        max-width: 150px;
+    }
+    .landing-text{
+        font-family: "Courier New", 'Segoe UI', Tahoma, Geneva, Verdana;
+        /* text-transform: uppercase; */
+        color: white;
+        display: table-cell;
+        text-align: justify;
+        padding-left: 15%;
+        padding-top: 15%;
+        margin-top: 30%;
+        padding-bottom: 20%;
+    }
+}
+@media (max-width: 320px) {
+    .landing-text h2{
+        font-size: 120%;
+    }
+    .landing-text h5{
+        font-size: 100%;
+    }
+    .landing-text .btn{
+        font-size: 12px;
+    }.network-icon a{
+        font-size: 2.5em;
+        color: white;
+        padding: 0.4em;
+    }
+    #name{
+        color: white;
+        font-family: "Proza Libre", "Gentium Basic", Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        font-size: 24px;
+        text-shadow: 1px 1px 1px grey;
+    }
+    .navbar-toggler{
+        font-size: small;
+    }
+    #fixed{
+        background: url(bckg4.jpg) no-repeat center center fixed;
+        display: table;
+        height: 40%;
+        position: relative;
+        width: 100%;
+        background-size: cover;
+    }
+    .proj-list h3, .proj-list h4{
+        font-size: 90%;
+    }
+    #skills, #education{
+        font-size: 250%;
+    }
+    #profile, #about-me{
+        font-size: 200%;
+    }
+    #deg, #org{
+        font-size: 150%;
+    }
+    #descr{
+        font-size: 120%;
+    }
+    #profile-text, #profile-text a{
+        font-size: 125%;
+    }
+    .proj-list{
+        font-size: 20px;
+    }
+    .proj-list h3{
+        font-size: 24px;
+    }
+    .proj-list h5{
+        font-size: 22px;
+    }
+    .dp{
+        max-width: 150px;
     }
 }
