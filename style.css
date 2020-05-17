@@ -104,7 +104,7 @@ a:hover{
     margin-right: auto;
     align-content: center;
     padding-bottom: 2em;
-    padding-top: 4em;
+    padding-top: 3.5em;
 }
 #profile{
     color: white;
@@ -329,7 +329,7 @@ a:hover{
         font-size: 120%;
     }
     #profile-text, #profile-text a{
-        font-size: 125%;
+        font-size: 20px;
     }
     .proj-list{
         font-size: 20px;
@@ -340,19 +340,29 @@ a:hover{
     .proj-list h5{
         font-size: 22px;
     }
+    
     .dp{
-        max-width: 150px;
+        max-width: 180px;
     }
     .landing-text{
         font-family: "Courier New", 'Segoe UI', Tahoma, Geneva, Verdana;
         /* text-transform: uppercase; */
         color: white;
+        font-size: 20px;
         display: table-cell;
         text-align: justify;
         padding-left: 15%;
         padding-top: 15%;
         margin-top: 30%;
         padding-bottom: 20%;
+    }
+    .landing-text h2{
+        font-size: 120%;
+        overflow: hidden;
+    }
+    .landing-text h5{
+        font-size: 100%;
+        overflow: hidden;
     }
 }
 @media (max-width: 320px) {
@@ -414,8 +424,5 @@ a:hover{
     }
     .proj-list h5{
         font-size: 22px;
-    }
-    .dp{
-        max-width: 150px;
     }
 }
