@@ -25,7 +25,9 @@ html, body{
     background-size: cover;
     margin-top: 0;
 }
-
+h1,h2,h3,h4,h5,h6{
+    overflow: hidden;
+}
 #header_nav{
     background-color: #101019;
     /* background-color: #202020; */
@@ -155,9 +157,10 @@ a:hover{
     background: url(bckg4.jpg) no-repeat center center fixed;
     display: table;
     height: 60%;
-    position: relative;
+    position: static;
     width: 100%;
     background-size: cover;
+    overflow: hidden;
 }
 
 #education{
@@ -174,7 +177,6 @@ a:hover{
     background-color: #1f1f29;
     background-size: cover;
     width: 100%;
-    position: relative;
 }
 #deg{
     color: #a0a0b0;
@@ -306,8 +308,9 @@ a:hover{
         background: url(bckg4.jpg) no-repeat center center fixed;
         display: table;
         height: 40%;
-        position: relative;
+        position: static;
         width: 100%;
+        overflow: hidden;
         background-size: cover;
     }
     .proj-list h3, .proj-list h4{
@@ -380,8 +383,9 @@ a:hover{
         background: url(bckg4.jpg) no-repeat center center fixed;
         display: table;
         height: 40%;
-        position: relative;
+        position: static;
         width: 100%;
+        overflow: hidden;
         background-size: cover;
     }
     .proj-list h3, .proj-list h4{
