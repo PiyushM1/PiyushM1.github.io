@@ -282,10 +282,16 @@ a:hover{
         color: white;
         padding: 0.75em;
     }
+    #landing{
+        background-attachment: scroll;
+    }
 }
 @media (max-width: 767px) {
     .network-icon a{
         padding: 0.5em;
+    }
+    #landing{
+        background-attachment: scroll;
     }
 }
 @media (max-width: 415px) {
@@ -311,6 +317,7 @@ a:hover{
         position: static;
         width: 100%;
         overflow: hidden;
+        background-attachment: scroll;
         background-size: cover;
     }
     .proj-list h3, .proj-list h4{
@@ -397,6 +404,8 @@ a:hover{
         width: 100%;
         overflow: hidden;
         background-size: cover;
+        background-attachment: scroll;
+
     }
     .proj-list h3, .proj-list h4{
         font-size: 90%;
