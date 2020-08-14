@@ -255,6 +255,7 @@ a:hover{
     color: darkgrey;
 }
 .network-icon{
+    overflow: hidden;
     justify-content:center;
     content: center;
     align-content: center;
@@ -333,7 +334,7 @@ a:hover{
         font-size: 150%;
     }
     #descr{
-        font-size: 120%;
+        font-size: 100%;
     }
     #profile-text, #profile-text a{
         font-size: 20px;
